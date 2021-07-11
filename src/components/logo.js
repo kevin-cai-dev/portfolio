@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const LogoWrap = styled.div`
+    margin: auto 0;
+    flex 0 1 5vh;
 `
 
 const Logo = (props) => {
@@ -13,7 +15,6 @@ const Logo = (props) => {
                 src="../images/icon.png"
                 placeholder="blurred"
                 alt="Placeholder icon"
-                width={65}
             />
         </LogoWrap>
     )

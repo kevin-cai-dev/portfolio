@@ -1,17 +1,27 @@
 import * as React from "react"
-import Layout from '../templates/layout'
+import FrontPage from '../templates/frontpage'
+import { createGlobalStyle } from 'styled-components'
+import Header from '../templates/header'
+import Metadata from '../components/metadata'
+import Projects from '../templates/projects'
 
-
-
-
-
+const GlobalStyle = createGlobalStyle`
+    body {
+        padding: 0;
+        margin: 0;
+    }
+`
 
 // markup
 const IndexPage = () => {
     return (
-        <Layout pageTitle="Home Page">
-            <p>This is the home page!</p>
-        </Layout>
+        <React.Fragment>
+            <GlobalStyle />
+            <Metadata />
+            <Header />
+            <FrontPage />
+            <Projects />
+        </React.Fragment>
     )
 }
 

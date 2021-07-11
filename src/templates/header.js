@@ -8,10 +8,11 @@ const Navigation = styled.nav`
     background-color: #aaaaaa;
     overflow: auto;
     height: 5vh;
+    padding: 1vh;
     max-width: 100vw;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
+    margin: 0;
 `
 
 const Header = () => {

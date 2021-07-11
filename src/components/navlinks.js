@@ -7,6 +7,7 @@ const NavItem = styled(Link)`
     margin: 0 1vw;
 `
 
+
 const NavbarLinks = () => {
     return (
         <div>
