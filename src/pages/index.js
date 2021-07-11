@@ -33,7 +33,8 @@ const IndexPage = () => {
         <React.Fragment>
             <GlobalStyle />
             <Metadata />
-            <Header />
+            <a id="top"></a>
+            <Header id="header"/>
             <FrontPage id="front-page"/>
             <Barrier id="projects"/>
             <Projects />

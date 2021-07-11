@@ -11,9 +11,9 @@ const LogoItem = styled(props => <AnchorLink {...props} />)`
 `
 
 
-const Logo = (props) => {
+const Logo = () => {
     return (
-        <LogoItem to="/#front-page">
+        <LogoItem to="/#top">
             <StaticImage 
                 src="../../images/icon.png"
                 placeholder="blurred"

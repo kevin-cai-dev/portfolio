@@ -21,9 +21,9 @@ const Navigation = styled.nav`
     background-image: linear-gradient(#0B0C10, #1F2833)
 `
 
-const Header = () => {
+const Header = ({ id }) => {
     return (
-        <Navigation>
+        <Navigation id={id}>
             <Logo />
             <NavbarLinks />
         </Navigation>
