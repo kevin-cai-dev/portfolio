@@ -4,12 +4,27 @@ import { createGlobalStyle } from 'styled-components'
 import Header from '../templates/header'
 import Metadata from '../components/metadata'
 import Projects from '../templates/projects'
+import styled from 'styled-components'
+
+import '@fontsource/ibm-plex-mono'
+import '@fontsource/roboto/300.css'
+import '@fontsource/bebas-neue'
 
 const GlobalStyle = createGlobalStyle`
     body {
         padding: 0;
         margin: 0;
+        background-color: #1F2833;
+        color: #C5C6C7;
     }
+`
+
+const Barrier = styled.hr`
+    border-bottom-width: 1px;
+    border-bottom-color: #C5C6C7;
+    border-bottom-style: solid;
+    width: 60vw;
+    margin: auto;
 `
 
 // markup
@@ -19,7 +34,8 @@ const IndexPage = () => {
             <GlobalStyle />
             <Metadata />
             <Header />
-            <FrontPage />
+            <FrontPage id="front-page"/>
+            <Barrier id="projects"/>
             <Projects />
         </React.Fragment>
     )

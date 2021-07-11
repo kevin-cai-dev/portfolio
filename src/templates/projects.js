@@ -1,15 +1,20 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import Subtitle from '../components/common/subtitle'
 
 const ProjectWrapper = styled.div`
-    height: 100vh;
-    background-color: yellow;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
 `
 
 const Projects = () => {
     return (
         <ProjectWrapper>
-            Filler Projects
+            <Subtitle text="Projects">
+                Projects
+            </Subtitle>
         </ProjectWrapper>
     )
 }

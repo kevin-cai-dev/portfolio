@@ -1,17 +1,26 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Introduction from '../components/introduction'
-import IconLinks from '../components/iconlinks'
+import Title from '../components/frontpage/title'
+import Description from '../components/frontpage/description'
+import IconLinks from '../components/frontpage/iconlinks'
 
 const FrontStyle = styled.div`
-    background-color: green;
-    height: 93vh;
+    height: 95vh;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 
-const FrontPage = () => {
+
+
+const FrontPage = ({ id }) => {
     return (
-        <FrontStyle>
-            <Introduction />
+        <FrontStyle id={id}>
+            <Title />
+            <Description />
             <IconLinks />
         </FrontStyle>
     )

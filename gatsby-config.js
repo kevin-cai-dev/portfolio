@@ -10,5 +10,11 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        duration: 450
+      }
+    }
   ],
 };
