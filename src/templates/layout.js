@@ -1,26 +1,24 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { createGlobalStyle } from 'styled-components'
+import Header from './header'
+import Metadata from '../components/metadata'
 
+const GlobalStyle = createGlobalStyle`
+    body {
+        padding: 0;
+        margin: 0;
+    }
+`
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <main>
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <p>filler</p>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <React.Fragment>
+            <GlobalStyle />
+            <Metadata />
+            <Header />
             {children}
-        </main>
+        </React.Fragment>
     )
 }
 
