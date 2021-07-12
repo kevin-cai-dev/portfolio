@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const IconWrapper = styled.a`
-    margin: 1rem;
+    margin: 0.5rem;
 `
 // https://codepen.io/sosuke/pen/Pjoqqp
 const Icon = styled.img`
