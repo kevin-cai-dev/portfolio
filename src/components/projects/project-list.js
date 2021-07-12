@@ -8,7 +8,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 const ProjectBox = styled.div`
     min-height: 25vh;
     max-height: 90vh;
-    // height: 25vh;
     width: 60vw;
     background-color: #1F2833;
     margin: 1rem;
@@ -26,12 +25,17 @@ const ProjectImage = styled.div`
     max-width: 30vw;
 `
 
-const ProjectDetails = styled.div`
-    // background-color: green;
-    flex-grow: 1;
+const ProjectInfo = styled.div`
     max-width: 30vw;
     padding: 1rem;
     box-sizing: border-box;
+    position: relative;
+`
+
+const ProjectLinks = styled.div`
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
 `
 
 
@@ -82,12 +86,13 @@ const ProjectList = () => {
                         <ProjectImage>
                             <GatsbyImage image={image} alt={title} className="img" />
                         </ProjectImage>
-                        <ProjectDetails>
+                        <ProjectInfo>
                             <h3 className="project-title">
                                 <a href={(external !== "none") ? external : github} target="_blank" rel="noopener noreferrer">
                                     {title}
                                 </a>
                             </h3>
+
                             <div 
                             className="project-description"
                             dangerouslySetInnerHTML={{ __html: html }}
@@ -100,9 +105,7 @@ const ProjectList = () => {
                                 ))}
                                 </ul>
                             )}
-
-                            
-                        </ProjectDetails>
+                        </ProjectInfo> 
                     </ProjectBox>
                 )
             })}

@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import '@fontsource/roboto/300.css'
 
 const TitleWrapper = styled.h2`
     margin: 0;
