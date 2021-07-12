@@ -7,8 +7,7 @@ import '@fontsource/bebas-neue'
 // image, title, description, technologies, link/s as icons
 
 const ProjectBox = styled.div`
-    min-height: 25vh;
-    max-height: 90vh;
+    max-height: 25vh;
     width: 60vw;
     background-color: #1F2833;
     margin: 1rem;
