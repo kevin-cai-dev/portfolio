@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const TitleWrapper = styled.h2`
-    margin: 0;
+    margin: 3rem 0 0 0;
     font-size: 4rem;
     font-family: "IBM Plex Mono", Arial;
     color: #66FCF1;

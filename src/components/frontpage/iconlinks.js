@@ -19,9 +19,9 @@ const IconLinks = () => {
 
     return (
         <IconWrapper>
-            {linkInfo.map((item) => {
+            {linkInfo.map((item, i) => {
                 return (
-                    <ImgLink {...item} />
+                    <ImgLink {...item} key={i}/>
                 )
             })}
         </IconWrapper>

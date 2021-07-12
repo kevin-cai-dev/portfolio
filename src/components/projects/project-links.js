@@ -1,6 +1,4 @@
-import { links } from 'min-document'
 import React from 'react'
-import styled from 'styled-components'
 import ImageInfo from '../common/image-info'
 import ImgLink from '../common/image-gen'
 
