@@ -24,6 +24,8 @@ const ProjectImage = styled.div`
     overflow: hidden;
     flex-grow: 1;
     max-width: 30vw;
+    overflow: hidden;
+    filter: blur(1px);
 `
 
 const ProjectInfo = styled.div`
@@ -149,7 +151,7 @@ const ProjectList = () => {
                                     </ProjectLink>
                                 </ProjectLinkWrapper>
                             </ProjectTitleWrapper>
-                            
+
                             <div 
                             className="project-description"
                             dangerouslySetInnerHTML={{ __html: html }}
