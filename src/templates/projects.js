@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import Subtitle from '../components/common/subtitle'
+import ProjectList from '../components/projects/project-list'
 
 const ProjectWrapper = styled.div`
     min-height: 95vh;
@@ -27,33 +28,7 @@ const Projects = () => {
             <Subtitle text="Projects">
                 Projects
             </Subtitle>
-            {/* <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler>
-            <Filler>
-                This is filler
-            </Filler> */}
+            <ProjectList />
         </ProjectWrapper>
     )
 }

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { StaticImage } from 'gatsby-plugin-image'
 import GitHub from '../../images/github.svg'
 import LinkedIn from '../../images/linkedin.svg'
 import Document from '../../images/document.svg'
@@ -22,13 +21,13 @@ const Icon = styled.img`
 const IconLinks = () => {
     return (
         <IconWrapper>
-            <LinkStyles href="https://github.com/Kevin-Cai-dev">
+            <LinkStyles href="https://github.com/Kevin-Cai-dev" target="_blank" rel="noopener noreferrer">
                 <Icon src={GitHub} alt="GitHub Link"/>
             </LinkStyles>
-            <LinkStyles href="https://www.linkedin.com/in/kevin-cai-39a167203/">
+            <LinkStyles href="https://www.linkedin.com/in/kevin-cai-39a167203/" target="_blank" rel="noopener noreferrer">
                 <Icon src={LinkedIn} alt="LinkedIn Link" />
             </LinkStyles>
-            <LinkStyles href={'resume.pdf'} download>
+            <LinkStyles href={'resume.pdf'} rel="noopener noreferrer" download >
                 <Icon src={Document} alt="Resume Download" />
             </LinkStyles>
         </IconWrapper>
