@@ -16,7 +16,6 @@ const IconLinks = () => {
     const links = ['github', 'linkedin', 'document']
 
     const linkInfo = ImageInfo.filter((item) => links.includes(item.name))
-    console.log(linkInfo)
 
     return (
         <IconWrapper>

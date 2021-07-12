@@ -8,10 +8,10 @@ const IconWrapper = styled.a`
 const Icon = styled.img`
     width: ${props => props.width ? `${props.width}rem` : '3.5rem'};
     filter:  brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(36%)
-    hue-rotate(169deg) brightness(94%) contrast(91%); 
+    hue-rotate(169deg) brightness(94%) contrast(91%);
 
     &:hover {
-        filter: brightness(0) saturate(100%) invert(74%) sepia(44%) saturate(5121%) hue-rotate(0deg) brightness(105%) contrast(106%);
+        filter: brightness(0) saturate(100%) invert(80%) sepia(78%) saturate(4678%) hue-rotate(357deg) brightness(99%) contrast(108%);
     }
 `
 

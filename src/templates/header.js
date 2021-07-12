@@ -10,6 +10,7 @@ const Navigation = styled.nav`
     max-width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-self: center;
     margin: 0;
     position: sticky;
     z-index: 1;

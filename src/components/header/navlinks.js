@@ -5,7 +5,15 @@ import styled from 'styled-components'
 const NavItem = styled(props => <AnchorLink {...props} />)`
     color: #C5C6C7;
     margin: 0 1vw;
-    font-family: Roboto, Arial;
+    font-family: "Bebas Neue", Arial;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+
+    &:hover {
+        color: #FFC100;
+    }
 `
 
 
