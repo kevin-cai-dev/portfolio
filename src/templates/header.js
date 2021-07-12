@@ -14,11 +14,11 @@ const Navigation = styled.nav`
     position: sticky;
     z-index: 1;
     top: 0;
-    // background-color: #0B0C10;
+    background-color: #414141;
     border-bottom-width: 3px;
     border-bottom-color: #45A29E;
     border-bottom-style: solid;
-    background-image: linear-gradient(#0B0C10, #1F2833)
+    // background-image: linear-gradient(#0B0C10, #1F2833)
 `
 
 const Header = ({ id }) => {

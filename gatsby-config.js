@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-svgr",
+    "gatsby-transformer-remark", 
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
@@ -29,5 +30,12 @@ module.exports = {
         icon: "src/images/icon.png"
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown-pages",
+        path: `${__dirname}/src/content/projects`
+      }
+    }
   ],
 };

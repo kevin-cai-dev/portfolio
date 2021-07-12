@@ -3,11 +3,23 @@ import styled from 'styled-components'
 import Subtitle from '../components/common/subtitle'
 
 const ProjectWrapper = styled.div`
-    height: 95vh;
+    min-height: 95vh;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
     padding-top: 2rem;
+    flex-direction: column;
 `
+
+// const Filler = styled.div`
+//     min-height: 20vh;
+//     width: 70vw;
+//     background-color: #1F2833;
+//     margin: 1rem;
+//     box-shadow: 5px 5px #354B65;
+//     // border: 5px ridge #354B65;
+//     flex-grow: 1;
+// `
 
 const Projects = () => {
     return (
@@ -15,6 +27,33 @@ const Projects = () => {
             <Subtitle text="Projects">
                 Projects
             </Subtitle>
+            {/* <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler>
+            <Filler>
+                This is filler
+            </Filler> */}
         </ProjectWrapper>
     )
 }

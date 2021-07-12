@@ -10,11 +10,12 @@ import '@fontsource/ibm-plex-mono'
 import '@fontsource/roboto/300.css'
 import '@fontsource/bebas-neue'
 
+// #1F2833
 const GlobalStyle = createGlobalStyle`
     body {
         padding: 0;
         margin: 0;
-        background-color: #1F2833;
+        background-color: #151515;
         color: #C5C6C7;
     }
 `

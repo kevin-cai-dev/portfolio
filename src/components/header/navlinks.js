@@ -3,7 +3,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import styled from 'styled-components'
 
 const NavItem = styled(props => <AnchorLink {...props} />)`
-    color: #66FCF1;
+    color: #C5C6C7;
     margin: 0 1vw;
     font-family: Roboto, Arial;
 `
