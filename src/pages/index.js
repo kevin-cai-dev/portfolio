@@ -4,9 +4,7 @@ import Projects from '../templates/projects'
 import Barrier from '../components/common/barrier'
 import Layout from '../templates/layout'
 
-import '@fontsource/ibm-plex-mono'
-import '@fontsource/roboto/300.css'
-import '@fontsource/bebas-neue'
+
 
 
 // markup

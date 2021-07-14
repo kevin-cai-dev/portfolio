@@ -16,8 +16,8 @@ const Navigation = styled.nav`
     z-index: 10;
     top: 0;
     transition: all 0.1s ease-in;
-    background-color: ${props => (props.isScrolled ? '#3C3C3C' : 'transparent')};
-    box-shadow: ${props => (props.isScrolled ? '0 3px 5px #45A29E' : 'none')};
+    background-color: ${props => (props.isScrolled ? 'var(--header-color)' : 'transparent')};
+    box-shadow: ${props => (props.isScrolled ? '0 3px 5px var(--accent-color)' : 'none')};
 `
 
 const Header = ({ id }) => {

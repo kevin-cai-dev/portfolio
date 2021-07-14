@@ -10,9 +10,9 @@ const BarrierStyle = styled.hr`
     opacity: 0.5;
 `
 
-const Barrier = () => {
+const Barrier = ({ id }) => {
     return (
-        <BarrierStyle />
+        <BarrierStyle id={id}/>
     )
 }
 
