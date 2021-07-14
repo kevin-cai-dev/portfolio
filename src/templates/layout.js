@@ -13,12 +13,6 @@ import "@fontsource/quicksand"
 
 // #1F2833
 const GlobalStyle = createGlobalStyle`
-    body {
-        padding: 0;
-        margin: 0;
-        background-color: #151515;
-        color: var(--text-color);
-    }
     :root {
         --background-color: #151515;
         --text-color: #C5C6C7;
@@ -40,6 +34,13 @@ const GlobalStyle = createGlobalStyle`
         --section-title-font: "Cutive Mono", Arial;
         --text-font: "Montserrat", "Arial";
         --header-font: "Quicksand", Arial;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: var(--text-font);
     }
 `
 

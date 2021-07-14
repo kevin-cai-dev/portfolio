@@ -1,15 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const FooterStyle = styled.div`
-    height: 10vh;
+const FooterWrapper = styled.div`
+    height: 5vh;
+    display: flex;
+    justify-content: center; 
+`
+
+const FooterContent = styled.div`
+    display: flex;
+    width: 60vw;
+    // border: 1px solid white;
 `
 
 const Footer = () => {
+
+    const d = new Date()
+    const year = d.getFullYear()
     return (
-        <FooterStyle>
-            Footer
-        </FooterStyle>
+        <FooterWrapper>
+            <FooterContent>
+                <p>Copyright © {year} Kevin Cai</p>
+            </FooterContent>
+        </FooterWrapper>
     )
 }
 
