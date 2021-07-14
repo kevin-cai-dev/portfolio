@@ -3,6 +3,7 @@ import Document from '../../images/document.svg'
 import External from '../../images/external-icon.svg'
 import GitHubIcon from '../../images/github-icon.svg'
 import LinkedIn from '../../images/linkedin.svg'
+import Logo from '../../images/logo.svg'
 
 const ImageInfo = [
     {
@@ -29,6 +30,11 @@ const ImageInfo = [
         name: 'github-icon',
         link: undefined,
         img: GitHubIcon
+    },
+    {
+        name: 'logo',
+        link: undefined,
+        img: Logo
     }
 ]
 

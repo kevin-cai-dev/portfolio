@@ -7,8 +7,9 @@ import '@fontsource/bebas-neue'
 // image, title, description, technologies, link/s as icons
 
 const ProjectBox = styled.div`
-    max-height: 25vh;
+    height: 25vh;
     width: 60vw;
+    max-width: var(--project-width);
     background-color: #1F2833;
     margin: 1rem;
     box-shadow: 5px 5px #354B65;
@@ -21,14 +22,16 @@ const ProjectImage = styled.div`
     display: flex;
     justify-content: center;
     overflow: hidden;
-    flex-grow: 1;
-    max-width: 30vw;
+    // flex-grow: 1;
+    width: 30vw;
+    max-width: calc(var(--project-width) / 2);
     overflow: hidden;
     filter: blur(1px);
 `
 
 const ProjectInfo = styled.div`
-    max-width: 30vw;
+    width: 30vw;
+    max-width: calc(var(--project-width) / 2);
     padding: 1rem;
     box-sizing: border-box;
     position: relative;

@@ -5,8 +5,8 @@ import Logo from '../components/header/logo'
 
 const Navigation = styled.nav`
     overflow: auto;
-    max-height: 3vh;
-    padding: 1vh;
+    max-height: 5vh;
+    padding: 0;
     max-width: 100vw;
     display: flex;
     justify-content: space-between;

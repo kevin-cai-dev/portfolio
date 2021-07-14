@@ -12,7 +12,7 @@ const ProjectLinks = ({ link, src }) => {
 
     const linkInfo = ImageInfo.find((item) => item.name === name)
     linkInfo.link = link
-    linkInfo.width = 2
+    linkInfo.width = 2.5
 
     return (
         <ImgLink {...linkInfo} />

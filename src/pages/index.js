@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
         background-color: #151515;
         color: #C5C6C7;
     }
+    :root {
+        --project-width: 1800px;
+    }
+    
 `
 
 const Barrier = styled.hr`

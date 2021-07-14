@@ -1,24 +1,28 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { StaticImage } from 'gatsby-plugin-image'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import ImageInfo from '../common/image-info'
+import ImgLink from '../common/image-gen'
 
 
 const LogoItem = styled(props => <AnchorLink {...props} />)`
-    margin: auto 0;
-    flex 0 1 3vh;
+    margin: 0 0.5rem 0 2rem;
+    flex 0 1 5vh;
+    box-sizing: border-box;
+    max-height: 5vh;
 `
 
 
 const Logo = () => {
+    const link = 'logo'
+    const linkInfo = ImageInfo.find((item) => item.name === link)
+    linkInfo.width = 5
+
     return (
         <LogoItem to="/#top">
-            <StaticImage 
-                src="../../images/icon.png"
-                placeholder="blurred"
-                alt="Placeholder icon"
-            />
+            <ImgLink {...linkInfo} />
         </LogoItem>
+        
     )
 }
 
