@@ -17,7 +17,7 @@ const Navigation = styled.nav`
     top: 0;
     transition: all 0.1s ease-in;
     background-color: ${props => (props.isScrolled ? '#3C3C3C' : 'transparent')};
-    box-shadow: ${props => (props.isScrolled ? '0 3px #45A29E' : 'none')};
+    box-shadow: ${props => (props.isScrolled ? '0 3px 5px #45A29E' : 'none')};
 `
 
 const Header = ({ id }) => {
@@ -43,7 +43,7 @@ const Header = ({ id }) => {
     }, [scrolled]);
 
     return (
-        <Navigation isScrolled={scrolled}>
+        <Navigation id={id} isScrolled={scrolled}>
             <Logo />
             <NavbarLinks />
         </Navigation>

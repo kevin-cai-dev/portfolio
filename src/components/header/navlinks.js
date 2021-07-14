@@ -25,7 +25,7 @@ const NavbarLinks = () => {
     return (
         <NavLinks>
             <NavItem to="/#projects">Projects</NavItem>
-            <NavItem to="/404">About</NavItem>
+            <NavItem to="/about">About</NavItem>
             <NavItem to="/404">Contact Me</NavItem>
         </NavLinks>
     )

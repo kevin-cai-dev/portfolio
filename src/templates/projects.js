@@ -13,16 +13,6 @@ const ProjectWrapper = styled.div`
     box-sizing: border-box;
 `
 
-// const Filler = styled.div`
-//     min-height: 20vh;
-//     width: 70vw;
-//     background-color: #1F2833;
-//     margin: 1rem;
-//     box-shadow: 5px 5px #354B65;
-//     // border: 5px ridge #354B65;
-//     flex-grow: 1;
-// `
-
 const Projects = () => {
     return (
         <ProjectWrapper>
