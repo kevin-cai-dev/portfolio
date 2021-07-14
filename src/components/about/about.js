@@ -9,7 +9,6 @@ const AboutStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: var(--box-color);
 
     .description {
         font-family: var(--text-font);
@@ -36,43 +35,12 @@ const AboutStyle = styled.div`
 `
 
 const Title = styled.h1`
-    font-family: var(--section-title-font);
-    font-size: 5rem;
+    font-family: var(--title-font);
+    font-size: 8rem;
     color: var(--title-color);
-    position: relative;
-    width: max-content;
-    --delay: 1s;
-    --duration: 2s;
-    --blink-frequency: 1000ms;
-
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    &:before {
-        background: var(--background-color);
-        animation: typewriter var(--duration) steps(8) var(--delay) forwards;
-    }
-
-    &:after {
-        width: 0.25rem;
-        background: var(--text-color);
-        animation: typewriter var(--duration) steps(8) var(--delay) forwards, blink var(--blink-frequency) steps(8) infinite;
-    }
-
-    @keyframes typewriter {
-        to { left: 100%; }
-    }
-
-    @keyframes blink {
-        to { background: transparent; }
-    }
-
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px var(--title-shadow);
+    margin: 5vh 0 2vh 0;
 `
 
 

@@ -7,12 +7,10 @@ const NavItem = styled(props => <AnchorLink {...props} />)`
     margin: 0 1vw;
     font-family: var(--header-font);
     font-size: 2vh;
-    letter-spacing: 0.03vw;
     text-decoration: none;
     transition: all 150ms ease-in;
     &:hover {
         color: var(--hover-color);
-        // text-decoration: underline;
         &:after {
             opacity: 1;
         }

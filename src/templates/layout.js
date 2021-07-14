@@ -6,11 +6,10 @@ import Footer from '../templates/footer'
 import Barrier from '../components/common/barrier'
 
 import '@fontsource/ibm-plex-mono'
-import '@fontsource/roboto/300.css'
 import '@fontsource/bebas-neue'
 import "@fontsource/cutive-mono"
 import "@fontsource/montserrat"
-import "@fontsource/playfair-display"
+import "@fontsource/quicksand"
 
 // #1F2833
 const GlobalStyle = createGlobalStyle`
@@ -40,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
         --subtitle-font: "IBM Plex Mono", Arial;
         --section-title-font: "Cutive Mono", Arial;
         --text-font: "Montserrat", "Arial";
-        --header-font: "Playfair Display", Arial;
+        --header-font: "Quicksand", Arial;
     }
 `
 
