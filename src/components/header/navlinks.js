@@ -5,13 +5,13 @@ import styled from 'styled-components'
 const NavItem = styled(props => <AnchorLink {...props} />)`
     color: #C5C6C7;
     margin: 0 1vw;
-    font-family: "Bebas Neue", Arial;
+    font-family: var(--title-font);
     font-size: 2.5vh;
     letter-spacing: 0.03vw;
     text-decoration: none;
     transition: all 100ms ease-in;
     &:hover {
-        color: #FFC100;
+        color: var(--hover-color);
     }
     max-height: 5vh;
 `

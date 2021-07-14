@@ -10,22 +10,19 @@ const ProjectBox = styled.div`
     height: 25vh;
     width: 60vw;
     max-width: var(--project-width);
-    background-color: #1F2833;
+    background-color: var(--box-color);
     margin: 1rem;
-    box-shadow: 5px 5px #354B65;
+    box-shadow: 5px 5px var(--box-shadow);
     display: flex;
     justify-content: center;
 `
 
 const ProjectImage = styled.div`
-    background-color: yellow;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    // flex-grow: 1;
     width: 30vw;
     max-width: calc(var(--project-width) / 2);
-    overflow: hidden;
     filter: blur(1px);
 `
 
@@ -37,7 +34,7 @@ const ProjectInfo = styled.div`
     position: relative;
 
     .project-description {
-        font-family: "Roboto", "Arial";
+        font-family: var(--text-font);
         font-size: 18px;
         margin-bottom: 2rem;
     }
@@ -45,7 +42,7 @@ const ProjectInfo = styled.div`
     .project-tech {
         display: flex;
         flex-wrap: wrap;
-        font-family: "IBM Plex Mono", Arial;
+        font-family: var(--subtitle-font);
         list-style-type: none;
         padding: 0;
     }
@@ -69,7 +66,7 @@ const ProjectTitleWrapper = styled.div`
     justify-content: space-between;
     margin: 0;
     align-items: center;
-    font-family: "Bebas Neue", "Arial";
+    font-family: var(--title-font);
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
 `
@@ -80,12 +77,12 @@ const ProjectTitle = styled.h3`
 
     .project-title {
         text-decoration: none;
-        color: #66FCF1;
+        color: var(--title-color);
     }
 `
 
 const PlaceholderText = styled.h3`
-    font-family: "Roboto", "Arial";
+    font-family: var(--text-font);
 `
 
 

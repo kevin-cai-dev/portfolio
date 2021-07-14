@@ -20,8 +20,17 @@ const GlobalStyle = createGlobalStyle`
     }
     :root {
         --project-width: 1800px;
+        --title-color: #66FCF1;
+        --title-shadow: #DDDDDD;
+        --subtitle-shadow: #FFA500;
+        --box-color: #1F2833;
+        --box-shadow: #354B65;
+        --hover-color: #FFC100;
+        --title-font: "Bebas Neue", "Arial";
+        --subtitle-font: "IBM Plex Mono", Arial;
+        --text-font: "Roboto", "Arial";
+
     }
-    
 `
 
 const Barrier = styled.hr`

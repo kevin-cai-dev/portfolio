@@ -1,8 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-// import GitHub from '../../images/github.svg'
-// import LinkedIn from '../../images/linkedin.svg'
-// import Document from '../../images/document.svg'
 import ImgLink from '../common/image-gen'
 import ImageInfo from '../common/image-info'
 
