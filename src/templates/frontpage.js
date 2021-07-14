@@ -6,7 +6,7 @@ import IconLinks from '../components/frontpage/iconlinks'
 import background from '../images/volcano-background.jpg'
 
 const FrontStyle = styled.div`
-    height: 95vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     margin: auto;

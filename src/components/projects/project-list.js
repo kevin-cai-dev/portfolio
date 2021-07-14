@@ -3,7 +3,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import ProjectLinks from '../projects/project-links'
-import '@fontsource/bebas-neue'
 // image, title, description, technologies, link/s as icons
 
 const ProjectBox = styled.div`

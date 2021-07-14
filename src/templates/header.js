@@ -1,30 +1,49 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import NavbarLinks from '../components/header/navlinks'
 import Logo from '../components/header/logo'
 
 const Navigation = styled.nav`
     overflow: auto;
-    max-height: 5vh;
+    height: 5vh;
     padding: 0;
-    max-width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-self: center;
     margin: 0;
-    position: sticky;
-    z-index: 1;
+    position: fixed;
+    z-index: 10;
     top: 0;
-    background-color: #414141;
-    border-bottom-width: 3px;
-    border-bottom-color: #45A29E;
-    border-bottom-style: solid;
-    // background-image: linear-gradient(#0B0C10, #1F2833)
+    transition: all 0.1s ease-in;
+    background-color: ${props => (props.isScrolled ? '#3C3C3C' : 'transparent')};
+    box-shadow: ${props => (props.isScrolled ? '0 3px #45A29E' : 'none')};
 `
 
 const Header = ({ id }) => {
+
+    // determined if page has scrolled and if the view is on mobile
+    const [scrolled, setScrolled] = useState(false);
+
+    // change state on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+        const isScrolled = window.scrollY > 30;
+        if (isScrolled !== scrolled) {
+            setScrolled(!scrolled);
+        }
+        };
+
+        document.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+        // clean up the event handler when the component unmounts
+        document.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrolled]);
+
     return (
-        <Navigation id={id}>
+        <Navigation isScrolled={scrolled}>
             <Logo />
             <NavbarLinks />
         </Navigation>
