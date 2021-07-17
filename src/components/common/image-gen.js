@@ -17,12 +17,6 @@ const Icon = styled.img`
 
 const StaticIcon = styled.img`
     width: ${props => props.width ? `${props.width}rem` : '4rem'};
-    // filter:  brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(36%)
-    // hue-rotate(169deg) brightness(94%) contrast(91%);
-
-    // &:hover {
-    //     filter: brightness(0) saturate(100%) invert(80%) sepia(78%) saturate(4678%) hue-rotate(357deg) brightness(99%) contrast(108%);
-    // }
 `
 
 

@@ -12,9 +12,7 @@ const FrontStyle = styled.div`
     margin: auto;
     margin-left: 0;
     margin-right: 0;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-image: url(${background});
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,14 +24,25 @@ const FrontStyle = styled.div`
     }
 `
 
+const FrontContent = styled.div`
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 
 
 const FrontPage = ({ id }) => {
     return (
         <FrontStyle id={id}>
-            <Title />
-            <Description />
-            <IconLinks />
+            <FrontContent>
+                <Title />
+                <Description />
+                <IconLinks />
+            </FrontContent>
+            
         </FrontStyle>
     )
 }

@@ -11,7 +11,7 @@ const AboutStyle = styled.div`
 
     .description {
         font-family: var(--text-font);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         max-width: 55vw;
         box-sizing: border-box;
         position: relative;
