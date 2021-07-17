@@ -62,14 +62,15 @@ const Content = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-y: ${props => props.bar ? "scroll" : "visible"};
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noScroll }) => {
     return (
         <React.Fragment>
             <GlobalStyle />
             <Metadata />
-            <Content>
+            <Content bar={noScroll}>
                 <span id="top"></span>
                 <Header id="header"/>
                 {children}

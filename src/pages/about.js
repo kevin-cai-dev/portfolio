@@ -4,7 +4,7 @@ import About from '../components/about/about'
 
 const AboutPage = () => {
     return (
-        <Layout>
+        <Layout noScroll="true">
             <About />
         </Layout>
     )
