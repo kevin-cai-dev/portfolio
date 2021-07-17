@@ -8,7 +8,7 @@ import ProjectLinks from '../projects/project-links'
 const ProjectBox = styled.div`
     height: 20rem;
     width: var(--project-width);
-    max-width: var(--max-project-width);
+    max-width: var(--max-content-width);
     background-color: var(--box-color);
     margin: 1rem;
     box-shadow: 5px 5px var(--box-shadow);
@@ -27,7 +27,7 @@ const ProjectImage = styled.div`
     justify-content: center;
     overflow: hidden;
     width: calc(var(--project-width) / 2);
-    max-width: calc(var(--max-project-width) / 2);
+    max-width: calc(var(--max-content-width) / 2);
     filter: blur(1px);
 
     @media only screen and (max-width: 620px) {
@@ -37,7 +37,7 @@ const ProjectImage = styled.div`
 
 const ProjectInfo = styled.div`
     width: calc(var(--project-width) / 2);
-    max-width: calc(var(--max-project-width) / 2);
+    max-width: calc(var(--max-content-width) / 2);
     padding: 1em;
     box-sizing: border-box;
     position: relative;
@@ -60,7 +60,7 @@ const ProjectInfo = styled.div`
     }
 
     @media only screen and (max-width: 620px) {
-        width: calc(var(--max-project-width) / 2);
+        width: var(--project-width);
     }
 `
 

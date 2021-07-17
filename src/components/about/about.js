@@ -12,7 +12,8 @@ const AboutStyle = styled.div`
     .description {
         font-family: var(--text-font);
         font-size: 1.2rem;
-        max-width: 55vw;
+        width: var(--project-width);
+        max-width: var(--max-content-width);
         box-sizing: border-box;
         position: relative;
         line-height: 1.2rem;
@@ -20,8 +21,8 @@ const AboutStyle = styled.div`
             margin: 0 0 3px 0;
         }
 
-        @media only screen and (max-width: 768px) {
-            max-width: 80vw;
+        @media only screen and (max-width: 1024px) {
+            width: 80vw;
         }
     }
 

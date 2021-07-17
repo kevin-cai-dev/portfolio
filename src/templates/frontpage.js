@@ -9,10 +9,11 @@ const FrontStyle = styled.div`
     height: 100vh;
     text-align: center;
     display: flex;
+    flex-direction: column;
     margin: auto;
     margin-left: 0;
     margin-right: 0;
-    align-items: center;
+    justify-content: center;
     background-image: url(${background});
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,7 +43,6 @@ const FrontPage = ({ id }) => {
                 <Description />
                 <IconLinks />
             </FrontContent>
-            
         </FrontStyle>
     )
 }

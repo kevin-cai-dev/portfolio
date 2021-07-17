@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
         --accent-color: #45A29E;
 
         --project-width: 60vw;
-        --max-project-width: 1800px;
+        --max-content-width: 1500px;
         
         --title-shadow: #DDDDDD;
         --subtitle-shadow: #FFA500;
@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
             font-size: 14px;
         }
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 986px) {
             --project-width: 80vw;
         }
 
