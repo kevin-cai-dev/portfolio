@@ -28,22 +28,18 @@ const NavItem = styled(props => <AnchorLink {...props} />)`
         border-bottom-style: solid;
         opacity: 0;
     }
-
-    @media only screen and (max-width: 400px) {
-        margin: 0 0.4rem;
-    }
 `
 
 const NavLinks = styled.div`
     margin: 0.5rem;
-    margin-right: 1rem;
+    margin-right: 5rem;
     display: flex;
     align-items: center;
     font-size: 1.5em;
 
     @media only screen and (max-width: 400px) {
         font-size: 1.3em;
-        margin-right: 0.4rem;
+        margin-right: 3rem;
     }
 `
 
@@ -53,7 +49,7 @@ const NavbarLinks = () => {
         <NavLinks>
             <NavItem to="/#project-anchor">Projects</NavItem>
             <NavItem to="/about#top">About</NavItem>
-            <NavItem to="/404">Contact Me</NavItem>
+            {/* <NavItem to="/404">Contact Me</NavItem> */}
         </NavLinks>
     )
 }
