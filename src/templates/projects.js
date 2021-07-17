@@ -4,9 +4,8 @@ import Subtitle from '../components/common/subtitle'
 import ProjectList from '../components/projects/project-list'
 
 const ProjectWrapper = styled.div`
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
-    // justify-content: center;
     align-items: center;
     padding-top: 2rem;
     flex-direction: column;

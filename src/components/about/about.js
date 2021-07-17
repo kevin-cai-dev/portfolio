@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const AboutStyle = styled.div`
-    height: 100vh;
     box-sizing: border-box;
     padding: 6vh 0 3vh 0;
     display: flex;
@@ -12,13 +11,17 @@ const AboutStyle = styled.div`
 
     .description {
         font-family: var(--text-font);
-        font-size: 20px;
+        font-size: 1.1rem;
         max-width: 55vw;
         box-sizing: border-box;
         position: relative;
-        line-height: 2vh;
+        line-height: 1.2rem;
         ul, li {
             margin: 0 0 3px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            max-width: 80vw;
         }
     }
 
@@ -36,11 +39,19 @@ const AboutStyle = styled.div`
 
 const Title = styled.h1`
     font-family: var(--title-font);
-    font-size: 8rem;
+    font-size: 8em;
     color: var(--title-color);
     letter-spacing: 0.5rem;
     text-shadow: 2px 2px var(--title-shadow);
     margin: 5vh 0 2vh 0;
+
+    @media only screen and (min-width: 320px) and (max-width: 400px) {
+        font-size: 7em;
+    }
+
+    @media only screen and (max-width: 320px)  {
+        font-size: 5em;
+    }
 `
 
 

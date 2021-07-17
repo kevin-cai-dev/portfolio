@@ -10,6 +10,8 @@ const FrontStyle = styled.div`
     text-align: center;
     display: flex;
     margin: auto;
+    margin-left: 0;
+    margin-right: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -18,6 +20,10 @@ const FrontStyle = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(5px);
+
+    @media only screen and (max-width: 320px) {
+        font-size: 0.8rem;
+    }
 `
 
 

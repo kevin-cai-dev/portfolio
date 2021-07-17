@@ -1,9 +1,9 @@
 import React from 'react'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Header from '../templates/header'
 import Metadata from '../components/metadata'
 import Footer from '../templates/footer'
-import Barrier from '../components/common/barrier'
+
 
 import '@fontsource/ibm-plex-mono'
 import '@fontsource/bebas-neue'
@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
         --header-color: #3C3C3C;
         --accent-color: #45A29E;
 
-        --project-width: 1800px;
+        --project-width: 60vw;
+        --max-project-width: 1800px;
         
         --title-shadow: #DDDDDD;
         --subtitle-shadow: #FFA500;
@@ -34,6 +35,19 @@ const GlobalStyle = createGlobalStyle`
         --section-title-font: "Cutive Mono", Arial;
         --text-font: "Montserrat", "Arial";
         --header-font: "Quicksand", Arial;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 12px;
+        }
+
+        @media only screen and (min-width: 450px) and (max-width: 768px) {  
+            font-size: 14px;
+        }
+
+        @media only screen and (max-width: 960px) {
+            --project-width: 80vw;
+        }
+
     }
     body {
         padding: 0;
@@ -44,16 +58,23 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+const Content = styled.div`
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+`
+
 const Layout = ({ children }) => {
     return (
         <React.Fragment>
             <GlobalStyle />
             <Metadata />
-            <span id="top"></span>
-            <Header id="header"/>
-            {children}
-            <Barrier id="footer"/>
-            <Footer />
+            <Content>
+                <span id="top"></span>
+                <Header id="header"/>
+                {children}
+                <Footer />
+            </Content>
         </React.Fragment>
     )
 }

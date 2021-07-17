@@ -5,11 +5,12 @@ import Logo from '../components/header/logo'
 
 const Navigation = styled.nav`
     overflow: auto;
-    height: 5vh;
+    height: 4.5rem;
     padding: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
     align-self: center;
     margin: 0;
     position: fixed;

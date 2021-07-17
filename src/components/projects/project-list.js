@@ -6,36 +6,45 @@ import ProjectLinks from '../projects/project-links'
 // image, title, description, technologies, link/s as icons
 
 const ProjectBox = styled.div`
-    height: 25vh;
-    width: 60vw;
-    max-width: var(--project-width);
+    height: 20rem;
+    width: var(--project-width);
+    max-width: var(--max-project-width);
     background-color: var(--box-color);
     margin: 1rem;
     box-shadow: 5px 5px var(--box-shadow);
     display: flex;
     justify-content: center;
+    overflow: auto;
+
+    @media only screen and (max-width: 620px) {
+        height: 17rem;
+    }
+    
 `
 
 const ProjectImage = styled.div`
     display: flex;
     justify-content: center;
     overflow: hidden;
-    width: 30vw;
-    max-width: calc(var(--project-width) / 2);
+    width: calc(var(--project-width) / 2);
+    max-width: calc(var(--max-project-width) / 2);
     filter: blur(1px);
+
+    @media only screen and (max-width: 620px) {
+        display: none;
+    }
 `
 
 const ProjectInfo = styled.div`
-    width: 30vw;
-    max-width: calc(var(--project-width) / 2);
-    padding: 1rem;
+    width: calc(var(--project-width) / 2);
+    max-width: calc(var(--max-project-width) / 2);
+    padding: 1em;
     box-sizing: border-box;
     position: relative;
 
     .project-description {
         font-family: var(--text-font);
-        font-size: 18px;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5em;
     }
 
     .project-tech {
@@ -47,12 +56,16 @@ const ProjectInfo = styled.div`
     }
     .project-tech li {
         white-space: nowrap;
-        margin: 0 1rem 0.2rem 0;
+        margin: 0 1em 0.2em 0;
+    }
+
+    @media only screen and (max-width: 620px) {
+        width: calc(var(--max-project-width) / 2);
     }
 `
 
 const ProjectLink = styled.div`
-    margin: 0.2rem;
+    margin: 0.2em;
 `
 
 const ProjectLinkWrapper = styled.div`
@@ -66,7 +79,7 @@ const ProjectTitleWrapper = styled.div`
     margin: 0;
     align-items: center;
     font-family: var(--title-font);
-    font-size: 1.7rem;
+    font-size: 1.5em;
     letter-spacing: 0.1rem;
 `
 

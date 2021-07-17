@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Barrier from '../components/common/barrier'
+
+const LayoutWrapper = styled.div`
+    margin-top: auto;
+    margin-bottom: 5px;
+`
 
 const FooterWrapper = styled.div`
     height: 5vh;
@@ -10,7 +16,6 @@ const FooterWrapper = styled.div`
 const FooterContent = styled.div`
     display: flex;
     width: 60vw;
-    // border: 1px solid white;
 `
 
 const Footer = () => {
@@ -18,11 +23,14 @@ const Footer = () => {
     const d = new Date()
     const year = d.getFullYear()
     return (
-        <FooterWrapper>
-            <FooterContent>
-                <p>Copyright © {year} Kevin Cai</p>
-            </FooterContent>
-        </FooterWrapper>
+        <LayoutWrapper>
+            <Barrier id="footer"/>
+            <FooterWrapper>
+                <FooterContent>
+                    <p>Copyright © {year} Kevin Cai</p>
+                </FooterContent>
+            </FooterWrapper>
+        </LayoutWrapper>
     )
 }
 

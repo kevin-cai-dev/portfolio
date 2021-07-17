@@ -6,7 +6,7 @@ const NavItem = styled(props => <AnchorLink {...props} />)`
     color: #C5C6C7;
     margin: 0 1vw;
     font-family: var(--header-font);
-    font-size: 2vh;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: all 150ms ease-in;
     &:hover {
@@ -32,14 +32,16 @@ const NavItem = styled(props => <AnchorLink {...props} />)`
 `
 
 const NavLinks = styled.div`
-    margin: 1vh;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
 `
 
 
 const NavbarLinks = () => {
     return (
         <NavLinks>
-            <NavItem to="/#projects">Projects</NavItem>
+            <NavItem to="/#project-anchor">Projects</NavItem>
             <NavItem to="/about#top">About</NavItem>
             <NavItem to="/404">Contact Me</NavItem>
         </NavLinks>

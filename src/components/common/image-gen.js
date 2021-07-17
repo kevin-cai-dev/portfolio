@@ -6,7 +6,7 @@ const IconWrapper = styled.a`
 `
 // https://codepen.io/sosuke/pen/Pjoqqp
 const Icon = styled.img`
-    width: ${props => props.width ? `${props.width}vh` : '3.5rem'};
+    width: ${props => props.width ? `${props.width}rem` : '3.5rem'};
     filter:  brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(36%)
     hue-rotate(169deg) brightness(94%) contrast(91%);
 
@@ -16,7 +16,7 @@ const Icon = styled.img`
 `
 
 const StaticIcon = styled.img`
-    width: ${props => props.width ? `${props.width}vh` : '4vh'};
+    width: ${props => props.width ? `${props.width}rem` : '4rem'};
     // filter:  brightness(0) saturate(100%) invert(84%) sepia(7%) saturate(36%)
     // hue-rotate(169deg) brightness(94%) contrast(91%);
 

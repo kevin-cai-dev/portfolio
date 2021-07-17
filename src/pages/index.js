@@ -12,8 +12,8 @@ const IndexPage = () => {
     return (
         <Layout>
             <FrontPage id="front-page"/>
-            <Barrier id="projects"/>
-            <Projects />
+            <Barrier id="project-anchor"/>
+            <Projects id="projects"/>
         </Layout>
     )
 }
