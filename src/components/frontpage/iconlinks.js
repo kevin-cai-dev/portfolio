@@ -10,7 +10,7 @@ const IconWrapper = styled.div`
 `
 
 const IconLinks = () => {
-    const links = ['github', 'linkedin', 'document']
+    const links = ['github', 'linkedin', 'document', 'email']
 
     const linkInfo = ImageInfo.filter((item) => links.includes(item.name))
 
