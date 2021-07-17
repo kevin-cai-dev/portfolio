@@ -1,15 +1,14 @@
-import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import Header from '../templates/header'
-import Metadata from '../components/metadata'
-import Footer from '../templates/footer'
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Header from "../templates/header";
+import Metadata from "../components/metadata";
+import Footer from "../templates/footer";
 
-
-import '@fontsource/ibm-plex-mono'
-import '@fontsource/bebas-neue'
-import "@fontsource/cutive-mono"
-import "@fontsource/montserrat"
-import "@fontsource/quicksand"
+import "@fontsource/ibm-plex-mono";
+import "@fontsource/bebas-neue";
+import "@fontsource/cutive-mono";
+import "@fontsource/montserrat";
+import "@fontsource/quicksand";
 
 // #1F2833
 const GlobalStyle = createGlobalStyle`
@@ -56,28 +55,28 @@ const GlobalStyle = createGlobalStyle`
         color: var(--text-color);
         font-family: var(--text-font);
     }
-`
+`;
 
 const Content = styled.div`
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-y: ${props => props.bar ? "scroll" : "visible"};
-`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: ${(props) => (props.bar ? "scroll" : "visible")};
+`;
 
 const Layout = ({ children, noScroll }) => {
-    return (
-        <React.Fragment>
-            <GlobalStyle />
-            <Metadata />
-            <Content bar={noScroll}>
-                <span id="top"></span>
-                <Header id="header"/>
-                {children}
-                <Footer />
-            </Content>
-        </React.Fragment>
-    )
-}
+  return (
+    <React.Fragment>
+      <GlobalStyle />
+      <Metadata />
+      <Content bar={noScroll}>
+        <span id="top"></span>
+        <Header id="header" />
+        {children}
+        <Footer />
+      </Content>
+    </React.Fragment>
+  );
+};
 
-export default Layout
+export default Layout;

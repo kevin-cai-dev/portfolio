@@ -1,13 +1,13 @@
-import React from 'react'
-import Layout from '../templates/layout'
-import About from '../components/about/about'
+import React from "react";
+import Layout from "../templates/layout";
+import About from "../components/about/about";
 
 const AboutPage = () => {
-    return (
-        <Layout noScroll="true">
-            <About />
-        </Layout>
-    )
-}
+  return (
+    <Layout noScroll="true">
+      <About />
+    </Layout>
+  );
+};
 
-export default AboutPage
+export default AboutPage;
