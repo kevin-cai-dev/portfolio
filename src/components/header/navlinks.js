@@ -4,9 +4,8 @@ import styled from 'styled-components'
 
 const NavItem = styled(props => <AnchorLink {...props} />)`
     color: #C5C6C7;
-    margin: 0 1vw;
+    margin: 0 1rem;
     font-family: var(--header-font);
-    font-size: 1.5rem;
     text-decoration: none;
     transition: all 150ms ease-in;
     &:hover {
@@ -29,12 +28,23 @@ const NavItem = styled(props => <AnchorLink {...props} />)`
         border-bottom-style: solid;
         opacity: 0;
     }
+
+    @media only screen and (max-width: 400px) {
+        margin: 0 0.4rem;
+    }
 `
 
 const NavLinks = styled.div`
     margin: 0.5rem;
+    margin-right: 1rem;
     display: flex;
     align-items: center;
+    font-size: 1.5em;
+
+    @media only screen and (max-width: 400px) {
+        font-size: 1.3em;
+        margin-right: 0.4rem;
+    }
 `
 
 

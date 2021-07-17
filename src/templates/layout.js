@@ -36,11 +36,11 @@ const GlobalStyle = createGlobalStyle`
         --text-font: "Montserrat", "Arial";
         --header-font: "Quicksand", Arial;
 
-        @media only screen and (max-width: 450px) {
+        @media only screen and (max-width: 460px) {
             font-size: 12px;
         }
 
-        @media only screen and (min-width: 450px) and (max-width: 768px) {  
+        @media only screen and (min-width: 460px) and (max-width: 768px) {  
             font-size: 14px;
         }
 
