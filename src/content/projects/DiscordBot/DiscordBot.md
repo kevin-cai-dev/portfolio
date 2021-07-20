@@ -2,7 +2,7 @@
 date: 1
 title: "Discord Bot"
 github: "https://github.com/Kevin-Cai-dev/node-vc-monitor"
-tech: ["node.JS", "Discord API", "MongoDB"]
+tech: ["Node.js", "Discord API", "MongoDB"]
 type: "project"
 external: "none"
 cover: "./discord.jpg"

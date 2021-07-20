@@ -2,7 +2,7 @@
 date: 2
 title: "Portfolio Website"
 github: "https://github.com/Kevin-Cai-dev/portfolio"
-tech: ["GatsbyJS", "ReactJS", "Javascript", "CSS", "GraphQL"]
+tech: ["Gatsby", "React", "Javascript", "CSS", "GraphQL"]
 type: "project"
 external: "https://kevincai.me/"
 cover: "website.png"
